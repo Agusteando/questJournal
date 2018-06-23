@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>My quest journal</title>
+      <meta name="author" content="">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css">
+
+
+
+	  <link href="css/style.css" rel="stylesheet">
+      <link rel="manifest" href="/manifest.json">
+   </head>
+   <body>
+   <div id="bg"></div>
+      <div class="container">	  
+         <div class="outer-div"><h1 class="title">Quest Journal</h1></div>
+         <div class="navbar" id="wrapper"></div>
+		  <div class="outer-div">
+			  <span class="table-add glyphicon glyphicon-plus"><Add new entry</span>
+		 </div>
+		 <form id="novaForm" action=""><input id="novaQuest" type="text" placeholder="New Quest"></form>
+		 <button id="save-btn" class="btn btn-primary" type="button">Save Progress</button>
+         <div id="table" class="table-editable">
+		
+            <table class="table">
+               <tr>
+                  <th>Action lines</th>
+                  <th>Habit</th>
+                  <th></th>
+                  <th></th>
+               </tr>
+               <!-- This is our clonable table line -->
+               <tr class="hide">
+                  <td contenteditable="true">Untitled</td>
+                  <td contenteditable="true" class="boolean">undefined</td>
+                  <td class="skip">
+                     <span class="table-remove glyphicon glyphicon-remove"></span>
+                  </td>
+                  <td class="skip">
+                     <span class="table-up glyphicon glyphicon-arrow-up"></span>
+                     <span class="table-down glyphicon glyphicon-arrow-down"></span>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         
+         <input id="active" type="text" hidden>
+      </div>
+      <div hidden class="footer">
+         <p>Developed by Alex el León</p>
+      </div>
+      <script src="js/jquery.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/jquery-ui.js"></script>
+	  <script src="js/jquery-ui.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/script2.js"></script>
+	  <script src="js/script3.js"></script>
+	  <script src="js/script4.js"></script>
+	  <script src="js/bg.js"></script>
+      <script src="js/rainbowvis.js"></script>
+      
+      <script>
+         if('serviceWorker' in navigator) {
+           navigator.serviceWorker
+                    .register('/sw.js')
+                    .then(function() { console.log("Service Worker Registered"); });
+         }
+      </script>
+      <script src="js/sw.js"></script>
+      <script src="js/localforage.js"></script>
+      <script src="js/localStorage.js"></script>
+   </body>
+</html>

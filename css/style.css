@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300|family=Questrial');
+
+
+input[type='checkbox'] {
+	width: 25px;
+	height: 25px;
+	float: right;
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: gray;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.tab {
+	font-size: 20px;
+	color: white;
+	border-width: 2px;
+}
+h1 {
+font-family: 'Questrial', sans-serif;
+}
+
+.fecha {
+	width: 40%;
+	font-size: 20px;
+	text-align: right;
+}
+
+#save-btn {
+	color: white;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 5px;
+	margin: 5px;
+}
+
+.input {
+	width: 50%
+}
+
+.date {
+	width: 50%
+}
+#sync {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	background-image: url("sync.png");
+	background-repeat: repeat;
+	background-size: contain;
+	width: 100px;
+	height: 100px;
+	background-color: none;
+	margin: 25px;
+}
+
+.goal {
+	border-width: 2px;
+	border-style: solid;
+	padding: 20px;
+	min-width: 100px;
+	border-color: #e1b09c;
+	background-image: url("bg.png");
+	background-position: center; 
+	background-repeat: repeat;
+	background-size: 100%;
+	box-shadow: 0px 0px 10px 1px #000000;
+	
+}
+
+.tdBuilder {
+	border-width: 2px;
+	border-style: solid;
+}
+
+.hide {
+	display: none;
+}
+
+.goal_btn {
+	background: none;
+	border-width: 0px;
+	color: white;
+}
+
+#novaQuest {
+	border-width: 2px;
+	border-style: solid;
+	font-size: 20px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	margin: 5px;
+}
+
+.glyphicon {
+	font-size: 20px;
+}
+
+
+}
+.table-remove {
+	color: #700;
+	cursor: pointer;
+	&:hover {
+		color: #f00;
+	}
+}
+.table-up,
+.table-down {
+	color: #007;
+	cursor: pointer;
+	&:hover {
+		color: #00f;
+	}
+}
+.table-add {
+	color: #070;
+	font-size: 25px;
+	cursor: pointer;
+	&:hover {
+		color: #0b0;
+	}
+}
+.outer-div
+{
+     padding: 0px;
+     text-align: center;
+}
+#table {
+width: 100%;
+background-color: #00000094;
+color: white;
+}
+#title {
+	width: auto;
+	padding: 5px;
+}
+#bg {
+min-height: 100%;
+min-width: 1024px;
+width: 100%;
+height: auto;
+position: fixed;
+top: 0;
+left: 0;
+z-index:-100;
+background-repeat: no-repeat;
+background-size: cover;
+}
